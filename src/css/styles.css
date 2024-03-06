@@ -96,9 +96,21 @@ p {
   color: #404bbf;
 }
 
-.hero-container {
+.hero {
+  position: sticky;
+  top: 0;
   background-color: #2e2f42;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 255, 0.25),
+      rgba(0, 0, 255, 0.25)
+    ),
+    url(https://cdn.pixabay.com/photo/2020/07/06/01/33/forest-5375005_1280.jpg);
 }
+
 .hero-title {
   font-weight: 700;
   font-size: 56px;
@@ -106,6 +118,12 @@ p {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
+  transition: transform 5000ms ease, color 6000ms linear;
+}
+
+.hero-title:hover {
+  color: green;
+  transform: scale(2);
 }
 
 .hero-btn {
