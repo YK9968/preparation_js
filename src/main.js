@@ -1,10 +1,12 @@
-import Accordion from 'accordion-js';
-import 'accordion-js/dist/accordion.min.css';
+import Swiper from 'swiper';
+// import 'swiper/css';
+// import { accordion } from './js/acord';
+import './js/acord';
 
-new Accordion('.accordion-container', {
-  duration: 400,
-  showMultiple: true,
-  onOpen: function (currentElement) {
-    console.log(currentElement);
+// ================================================================= ^ accord ^
+const swiper = new Swiper('.mySwiper', {
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 });
